@@ -139,3 +139,6 @@ td button {
 img {
   width: 70px;
 }
+.botao-compra:hover {
+  background-color: #c44f00;
+}
