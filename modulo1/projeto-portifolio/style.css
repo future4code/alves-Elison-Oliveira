@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  bottom: 10%;
+  position: relative;
+}
+
+.imagem {
+  position: absolute;
+
+  color: yellow;
+  left: 30%;
+  top: 20%;
+  width: 40px;
+  font-size: 100px;
+  font-family: "Press Start 2P", cursive;
+}
+.titulo2 {
+  position: absolute;
+  color: aquamarine;
+  left: 30%;
+  top: 60%;
+  font-size: 50px;
+}
+nav {
+  color: aqua;
+  position: absolute;
+  left: 65%;
+  top: 5%;
+}
+a {
+  color: antiquewhite;
+  text-decoration: none;
+  margin: 10px;
+}
+a:hover {
+  background-color: yellow;
+  color: black;
+}
+main {
+  position: relative;
+}
+#avata {
+  width: 150px;
+  left: 875px;
+  bottom: 260px;
+}
+#idade {
+  width: 500px;
+  padding-left: 920px;
+  bottom: 200px;
+  color: black;
+  position: absolute;
+}
+.fraseTitulo {
+  font-size: 40px;
+  width: 600px;
+  text-align: center;
+}
+.texto {
+  width: 800px;
+  font-size: 25px;
+  padding-left: 30px;
+}
+
+#habilidade {
+  text-align: center;
+}
+#titulo-habilidade {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: aquamarine;
+}
+#experiencia {
+  text-align: center;
+}
+#titulo-esperiencia {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: aquamarine;
+}
+#pasta {
+  text-align: center;
+}
+#titulo-pasta {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: aquamarine;
+}
+table {
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: black;
+  color: yellow;
+}
+td {
+  text-align: center;
+}
