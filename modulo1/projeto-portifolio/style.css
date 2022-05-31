@@ -60,11 +60,26 @@ main {
   font-size: 40px;
   width: 600px;
   text-align: center;
+  padding-top: 30px;
+}
+.fraseTitulo1 {
+  font-size: 40px;
+  width: 600px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 450px;
+}
+.texto2 {
+  width: 800px;
+  font-size: 25px;
+  padding-top: 40px;
+  padding-left: 400px;
 }
 .texto {
   width: 800px;
   font-size: 25px;
   padding-left: 30px;
+  padding-top: 40px;
 }
 
 #habilidade {
@@ -91,6 +106,7 @@ main {
   padding-bottom: 20px;
   color: aquamarine;
 }
+
 table {
   margin-top: 50px;
   padding-top: 60px;
@@ -100,4 +116,68 @@ table {
 }
 td {
   text-align: center;
+}
+#fundo-logo {
+  padding: 80px 0px;
+  height: 270px;
+}
+.textoExperiencia {
+  position: absolute;
+  color: yellow;
+  padding-left: 600px;
+  top: 200px;
+}
+.frase-experiencia {
+  position: absolute;
+  color: yellow;
+  padding-left: 350px;
+  top: 260px;
+}
+.Titulo-pasta {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 50px;
+}
+.imagem-loja {
+  width: 50%;
+  position: relative;
+  left: 700px;
+  height: auto;
+  top: 50px;
+}
+.imagem-ajatos {
+  width: 75%;
+  position: absolute;
+  bottom: -50px;
+  left: 50px;
+}
+body {
+  overflow-x: hidden;
+}
+.borda-img {
+  margin-bottom: 100px;
+}
+.borda-forme {
+  background-color: darkslategrey;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+#nome {
+  margin-bottom: 20px;
+}
+#e-mail {
+  margin-bottom: 30px;
+}
+#assunto {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#titulo-formulario {
+  color: yellow;
+  padding-top: 10px;
+}
+label {
+  color: yellow;
 }
