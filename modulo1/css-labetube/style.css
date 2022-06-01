@@ -35,7 +35,6 @@ header input {
 }
 main {
   display: grid;
-  border: solid 1px red;
 
   margin: 1rem;
 }
@@ -45,7 +44,7 @@ main video {
 }
 section {
   display: flex;
-  border: solid 1px blue;
+
   gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,4 +57,12 @@ div {
 }
 .box-1 {
   width: 100%;
+}
+
+@midia screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
