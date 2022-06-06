@@ -1,0 +1,46 @@
+h1 {
+  background-color: red;
+  margin-top: 0;
+  margin-bottom: -30px;
+  color: antiquewhite;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 375px;
+  padding-right: 375px;
+}
+body {
+  background-color: lightslategrey;
+}
+.titulo {
+  color: yellow;
+}
+a {
+  background-color: red;
+  color: antiquewhite;
+  margin-left: 25px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#box-1 {
+  background-color: red;
+  padding-left: 10px;
+  color: antiquewhite;
+}
+.rodape {
+  background-color: red;
+  color: antiquewhite;
+  text-align: center;
+}
+.rodape1 img {
+  width: 20px;
+}
+.rodape1 {
+  text-align: center;
+}
+.imagem img {
+  width: 700px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
