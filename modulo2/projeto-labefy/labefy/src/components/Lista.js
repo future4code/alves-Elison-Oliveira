@@ -10,7 +10,7 @@ const Botao = styled.button`
   position: relative;
   font-size: inherit;
   font-family: inherit;
-  color: white;
+  color: orange;
   padding: 0.5em 1em;
   outline: none;
   border: none;
@@ -18,7 +18,7 @@ const Botao = styled.button`
   cursor: pointer;
 `;
 
-const ListaUsuarios = styled.div`
+const ListaMusica = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +75,7 @@ export default class Lista extends React.Component {
         },
       })
       .then((res) => {
-        alert("Usuário(a) deletado(a) com sucesso!");
+        alert("Musica deletado com sucesso!");
         this.pegarUsuarios();
       })
       .catch((err) => {
@@ -94,11 +94,11 @@ export default class Lista extends React.Component {
     });
 
     return (
-      <ListaUsuarios>
-        <Botao onClick={this.props.irParaCadastro}>Ir para Cadastro</Botao>
-        <h2>Lista de Usuários</h2>
+      <ListaMusica>
+        <Botao onClick={this.props.irParaCadastro}>Volta</Botao>
+        <h2>Lista de musicas</h2>
         {listaUsuarios}
-      </ListaUsuarios>
+      </ListaMusica>
     );
   }
 }

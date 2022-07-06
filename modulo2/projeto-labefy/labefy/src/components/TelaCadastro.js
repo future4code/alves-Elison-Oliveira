@@ -29,7 +29,7 @@ const Botao = styled.button`
   position: relative;
   font-size: inherit;
   font-family: inherit;
-  color: white;
+  color: orange;
   padding: 0.5em 1em;
   outline: none;
   border: none;
@@ -39,7 +39,7 @@ const Botao = styled.button`
 
 export default class TelaCadastro extends React.Component {
   state = {
-    nome: "",
+    nome: [],
   };
 
   handleNome = (event) => {
@@ -60,7 +60,7 @@ export default class TelaCadastro extends React.Component {
         },
       })
       .then((res) => {
-        alert("Usuário(a) cadastrado(a) com sucesso!");
+        alert("Lista cadastrado com sucesso!");
         this.setState({ nome: "" });
       })
       .catch((err) => {
@@ -71,18 +71,18 @@ export default class TelaCadastro extends React.Component {
   render() {
     return (
       <div>
-        <Botao onClick={this.props.irParaLista}>
-          Ir para Lista de Usuários
-        </Botao>
+        <Botao onClick={this.props.irParaLista}>Ir para Listas</Botao>
         <Login>
-          <h2>Cadastro</h2>
+          <h2>Sua Musica</h2>
           <input
-            placeholder={"Nome"}
+            placeholder={"Sua playlist"}
             value={this.state.nome}
             onChange={this.handleNome}
           />
 
-          <Botao onClick={this.fazerCadastro}>Cadastrar</Botao>
+          <Botao onClick={this.fazerCadastro} type="submit">
+            Criar
+          </Botao>
         </Login>
       </div>
     );
