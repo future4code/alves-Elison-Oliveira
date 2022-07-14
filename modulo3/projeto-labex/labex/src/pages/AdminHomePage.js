@@ -1,9 +1,28 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { goToCreateTripPage, goToHomePage } from "../routes/cordinator";
+import { goToCreateTripPage, goToHomePage } from "../routes/coordinator";
+import useProtected from "../hooks/useProtected";
+import useRequestData from "../hooks/useRequestData";
+
+import AdminTripCard from "../components/AdminTripCard/AdminTripCard";
+import styled from "styled-components";
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin: 10px 0;
+`;
+
+export const AdminHomeScreenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+`;
 
 const AdminHomePage = () => {
-  useProtectedPage();
+  useProtected();
   const history = useHistory();
   const [tripsData, getTrips] = useRequestData("/trips", {});
 

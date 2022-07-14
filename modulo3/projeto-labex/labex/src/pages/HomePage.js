@@ -1,6 +1,13 @@
 import React from "react";
-import { goToListTripsPage, goToLoginPage } from "../routes/cordinator";
+import { goToListTripsPage, goToLoginPage } from "../routes/coordinator";
 import { useHistory } from "react-router-dom";
+import styled from "styled-components";
+
+export const ButtonsContainer = styled.div`
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+`;
 
 const HomePage = () => {
   const history = useHistory();

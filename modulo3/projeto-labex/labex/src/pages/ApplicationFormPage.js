@@ -1,7 +1,27 @@
 import React from "react";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { goToListTripsPage } from "../routes/cordinator";
+import { goToListTripsPage } from "../routes/coordinator";
+import useRequestData from "../hooks/useRequestData";
+import { sendApplication } from "../services/requests";
+import { countries } from "../constants/countries";
+import useForm from "../hooks/useForm";
+import styled from "styled-components";
+
+export const ApplicationScreenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin: 10px 0;
+`;
 
 const ApplicationFormPage = () => {
   const [tripId, setTripId] = useState("");

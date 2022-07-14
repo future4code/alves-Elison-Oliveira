@@ -1,9 +1,33 @@
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
-import { goToAdminHomePage } from "../../routes/coordinator";
+import { goToAdminHomePage } from "../routes/coordinator";
+import useRequestData from "../hooks/useRequestData";
+import useProtected from "../hooks/useProtected";
+import CandidateCard from "../components/CandidateCard/CandidateCard";
+import styled from "styled-components";
+
+export const TripDataContainer = styled.div`
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 15px 0;
+  max-width: 500px;
+`;
+
+export const TripScreenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin: 10px 0;
+`;
 
 const TripDetailsPage = () => {
-  useProtectedPage();
+  useProtected();
   const history = useHistory();
   const { id } = useParams();
   const [tripDetails, getTripDetails] = useRequestData(`/trip/${id}`);

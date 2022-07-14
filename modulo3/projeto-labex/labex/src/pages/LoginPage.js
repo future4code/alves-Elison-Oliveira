@@ -1,9 +1,20 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { goToHomePage } from "../routes/cordinator";
+import { goToHomePage } from "../routes/coordinator";
+import useForm from "../hooks/useForm";
+import { login } from "../services/requests";
+import useUnprotected from "../hooks/useUnprotected";
+import styled from "styled-components";
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin: 10px 0;
+`;
 
 const LoginPage = () => {
-  useUnprotectedPage();
+  useUnprotected();
   const history = useHistory();
   const { form, onChange } = useForm({ email: "", password: "" });
 
