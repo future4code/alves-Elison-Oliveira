@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import { goToCreateTripPage, goToHomePage } from "../routes/coordinator";
 import useProtected from "../hooks/useProtected";
 import useRequestData from "../hooks/useRequestData";
-
 import AdminTripCard from "../components/AdminTripCard/AdminTripCard";
 import styled from "styled-components";
 
@@ -36,9 +35,10 @@ const AdminHomePage = () => {
 
   return (
     <AdminHomeScreenContainer>
+      <button onClick={() => goToHomePage(history)}>Volta</button>
       <h1>Painel Administrativo</h1>
+
       <ButtonsContainer>
-        <button onClick={() => goToHomePage(history)}>Voltar</button>
         <button onClick={() => goToCreateTripPage(history)}>
           Criar Viagem
         </button>

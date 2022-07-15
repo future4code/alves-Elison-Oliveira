@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const DeleteButton = styled(Delete)`
+export const DeleteButton = styled.button`
   padding: 10px;
   color: slategray;
   &:hover {
