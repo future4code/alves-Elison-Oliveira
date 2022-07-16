@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { API_CLIENT, BASE_URL } from "../constants/urls";
+import { API_CLIENT, BASE_URL } from "../Urls/urls";
 
 function MatchesPage() {
   const [matches, setMatches] = useState(undefined);
 
- 
   useEffect(() => {
     getMatches();
   }, []);
