@@ -4,11 +4,16 @@ const PrincipalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:DarkBlue;
+    
+  }
+  div {
+    background-color:yellow;
   }
 
   form {
@@ -59,12 +64,18 @@ const PrincipalStyle = createGlobalStyle`
   }
 
   img {
-    width: 50%;
-    padding-left: 20%;
+    width: 40%;
+    padding-left: 30%;
+    align-items: center;
+    margin-bottom: 70px;
   }
 
   h1 {
-    text-align: center;
+    
+    background-color: DarkBlue;
+ 
+    padding-left:-5px;
+
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
 

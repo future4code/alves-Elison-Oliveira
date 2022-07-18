@@ -15,8 +15,8 @@ const HomePage = () => {
   const history = useHistory();
   return (
     <>
-      <img src={LogoAstro} />
       <h1>LabeX</h1>
+      <img src={LogoAstro} />
       <ButtonsContainer>
         <button onClick={() => goToListTripsPage(history)}>Ver Viagens</button>
         <button onClick={() => goToLoginPage(history)}>Área de Admin</button>
