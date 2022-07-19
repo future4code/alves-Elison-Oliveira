@@ -42,7 +42,7 @@ const AdminHomePage = () => {
         <button onClick={() => goToCreateTripPage(history)}>
           Criar Viagem
         </button>
-        <button onClick={() => logout(history)}>Logout</button>
+        <button>Logout</button>
       </ButtonsContainer>
       {tripsList && tripsList.length > 0 ? tripsList : <p>Caregando...</p>}
     </AdminHomeScreenContainer>
