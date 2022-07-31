@@ -21,7 +21,7 @@ import {
   LightGray,
   MainContainer,
   LoaderContainer,
-} from "./style";
+} from "./styled";
 import { GlobalContext } from "../../global/GlobalContext";
 import { useNavigate } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";

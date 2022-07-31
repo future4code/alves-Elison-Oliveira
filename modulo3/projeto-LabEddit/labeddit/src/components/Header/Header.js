@@ -6,7 +6,7 @@ import {
   Orange,
   HeaderContainer,
   Logo,
-} from "./style";
+} from "./styled";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import { useNavigate } from "react-router-dom";
 

@@ -1,12 +1,17 @@
-import { ThemeProvider } from "@material-ui/core/styles";
-import Router from "./routes/Routes";
+import { ThemeProvider } from "@mui/material/styles";
+import GlobalState from "./global/GlobalState";
+import { GlobalStyle } from "./GlobalStyle";
+import Router from "./routes/Router";
 import theme from "./constants/theme";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Router />
-    </ThemeProvider>
+    <GlobalState>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Router />
+      </ThemeProvider>
+    </GlobalState>
   );
 }
 
