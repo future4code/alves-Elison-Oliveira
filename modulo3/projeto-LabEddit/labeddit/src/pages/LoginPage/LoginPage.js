@@ -178,7 +178,7 @@ const LoginPage = () => {
                 variant={"secondary"}
                 fullWidth
                 sx={{ mt: 1 }}
-                onClick={() => navigate("/signup")}
+                onClick={() => navigate("/Cadastro")}
               >
                 Criar uma conta!
               </Button>

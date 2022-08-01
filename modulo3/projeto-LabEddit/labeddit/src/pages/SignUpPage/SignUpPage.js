@@ -29,7 +29,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Header from "../../components/Header/Header";
 import { useForm } from "../../hooks/useForm";
 
-const CadastroPage = () => {
+const SignUpPage = () => {
   const [values, setValues] = useState({
     showPassword: false,
     postLogin: false,
@@ -234,4 +234,4 @@ const CadastroPage = () => {
   );
 };
 
-export default CadastroPage;
+export default SignUpPage;
